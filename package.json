@@ -1,0 +1,39 @@
+{
+  "name": "@harvard-lts/mirador-url-sync-plugin",
+  "version": "0.1.0",
+  "description": "Mirador plugin for Harvard mps-viewer which synchronizes the URL with the canvas ID",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist && rm -rf es",
+    "prepublishOnly": "npm run build",
+    "build": "parcel build",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harvard-lts/mirador-url-sync-plugin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/harvard-lts/mirador-url-sync-plugin#readme",
+  "dependencies": {
+    "mirador": "^3.3.0",
+    "redux": "^4.2.1",
+    "redux-saga": "^1.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^12.0.0",
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "parcel": "^2.8.3",
+    "url": "^0.11.0"
+  }
+}
