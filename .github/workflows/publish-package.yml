@@ -5,13 +5,13 @@ on:
 
 jobs:
   publish:
+    runs-on:
+      group: huit-arc
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-        runs-on:
-          group: huit-arc
 
       - name: Compare the tag and version
         run: |
