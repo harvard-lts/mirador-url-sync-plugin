@@ -12,8 +12,7 @@ on:
 jobs:
   orca-sast_scan:
     name: ORCA SAST Scan
-    runs-on:
-      group: huit-arc
+    runs-on: ubuntu
     env:
       # Set the desired project to
       PROJECT_KEY:  harvard-lts-mirador-url-sync-plugin
