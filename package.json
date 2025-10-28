@@ -22,7 +22,7 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/harvard-lts/mirador-url-sync-plugin#readme",
   "dependencies": {
-    "mirador": "^3.3.0",
+    "mirador": "^4.0.0-rc.1",
     "redux": "^4.2.1",
     "redux-saga": "^1.2.3"
   },
