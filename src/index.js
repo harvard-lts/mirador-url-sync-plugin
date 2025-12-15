@@ -1,5 +1,9 @@
 import MiradorURLSyncPlugin from "./plugins/MiradorURLSyncPlugin";
 
-export { MiradorURLSyncPlugin };
+export {
+  MiradorURLSyncPlugin,
+};
 
-export default MiradorURLSyncPlugin;
+export default [
+  MiradorURLSyncPlugin,
+];
