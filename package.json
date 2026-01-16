@@ -2,9 +2,10 @@
   "name": "@harvard-lts/mirador-url-sync-plugin",
   "version": "0.1.9",
   "description": "Mirador plugin for Harvard mps-viewer which synchronizes the URL with the canvas ID",
-  "main": "dist/index.js",
-  "source": "src/index.js",
-  "module": "es/index.js",
+  "module": "dist/es/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "clean": "rm -rf ./dist && rm -rf ./demo/dist",
     "prebuild": "npm run clean",
