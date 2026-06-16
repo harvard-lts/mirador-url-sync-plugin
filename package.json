@@ -1,6 +1,6 @@
 {
   "name": "@harvard-lts/mirador-url-sync-plugin",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Mirador plugin for Harvard mps-viewer which synchronizes the URL with the canvas ID",
   "module": "dist/es/index.js",
   "files": [
@@ -27,6 +27,7 @@
   "homepage": "https://github.com/harvard-lts/mirador-url-sync-plugin#readme",
   "dependencies": {
     "jquery": "^3.7.0",
+    "node": "^22.22.3",
     "prop-types": "^15.8.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
@@ -50,7 +51,7 @@
     "parcel": "^2.14.4",
     "rollup": "^3.29.5",
     "url": "^0.11.4",
-    "vite": "^7.3.1",
+    "vite": "^8.0.16",
     "vitest": "^4.0.17"
   }
 }
