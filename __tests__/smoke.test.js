@@ -1,4 +1,14 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
+
+// Mock `mirador` so importing the plugin doesn't load the full browser bundle
+// (which triggers a jsdom HTMLCanvasElement.getContext error).
+vi.mock('mirador', () => ({
+  getCanvas: vi.fn(),
+  getCanvases: vi.fn(),
+  getWindowIds: vi.fn(),
+  setCanvas: vi.fn(),
+}));
+
 import plugins, { MiradorURLSyncPlugin } from '../src/index.js';
 
 describe('mirador-url-sync-plugin smoke test', () => {
