@@ -3,8 +3,8 @@ import {
   getCanvas,
   getCanvases,
   getWindowIds,
-} from "mirador/dist/es/src/state/selectors";
-import { setCanvas } from "mirador/dist/es/src/state/actions";
+  setCanvas,
+} from "mirador";
 
 /**
  * Add a canvasId query parameter to the URL

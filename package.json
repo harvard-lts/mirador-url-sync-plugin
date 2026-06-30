@@ -1,6 +1,6 @@
 {
   "name": "@harvard-lts/mirador-url-sync-plugin",
-  "version": "0.1.13",
+  "version": "2.0.0",
   "description": "Mirador plugin for Harvard mps-viewer which synchronizes the URL with the canvas ID",
   "module": "dist/es/index.js",
   "files": [
@@ -14,6 +14,7 @@
     "build:es": "rollup -c",
     "serve": "vite",
     "test": "vitest run",
+    "test:unit": "node scripts/coverage-ci.mjs",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest"
   },
@@ -26,12 +27,16 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/harvard-lts/mirador-url-sync-plugin#readme",
   "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^7.0.0",
+    "@mui/system": "^7.0.0",
     "jquery": "^3.7.0",
-    "node": "^22.22.3",
     "prop-types": "^15.8.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "redux": "^4.2.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-i18next": "^15.0.0",
+    "redux": "^5.0.0",
     "redux-saga": "^1.2.3"
   },
   "devDependencies": {
@@ -41,12 +46,12 @@
     "@babel/preset-react": "^7.18.6",
     "@rollup/plugin-babel": "^6.0.3",
     "@testing-library/jest-dom": "^6.1.5",
-    "@testing-library/react": "^12.0.0",
+    "@testing-library/react": "^16.0.0",
     "@vitejs/plugin-react": "^5.1.2",
     "@vitest/coverage-v8": "^4.0.17",
     "@vitest/ui": "^4.0.17",
     "jsdom": "^27.4.0",
-    "mirador": "^3.4.3",
+    "mirador": "^4.1.0",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.14.4",
     "rollup": "^3.29.5",
